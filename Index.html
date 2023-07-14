@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>SofyCat's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="site_icon.png">
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="cloud.png">
+        </div>
+        <div class="contentBx">
+            <!-- <h5 class="logoText">My Portfolio</h5> -->
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h1>SofyCat!</h1>
+                <h4>IndieDev / Sound Designer / Pixel Artist</h4>
+                <br>
+                <p>Hobby dev 💻 | Self taught 💜 | Tea addict 🍵 <br><br>My love for gaming 
+                    inspires me to make the best product I can. To know more about me click the below button.
+                </p>
+                <br>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://discord.gg/UdpBpxQBB8"><img src="discord.png"></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title pink">
+            <h2>About</h2>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>WIP LOL :3</p>
+            </div>
+            <div class="imgBx">
+                <img src="aboutme.png">
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()"><span style="text-align: center;"></span>Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()"><span style="text-align: center;"></span>About</a></li>  
+            
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>Copyright @2023 sofycat. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle')
+            const sidebar = document.querySelector('.sidebar')
+            menuToggle.classList.toggle('active')
+            sidebar.classList.toggle('active')
+        }
+
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // disable right click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+     
+        document.onkeydown = function (e) {
+     
+            // disable F12 key
+            if(e.keyCode == 123) {
+                return false;
+            }
+     
+            // disable I key
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+                return false;
+            }
+     
+            // disable J key
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+     
+            // disable U key
+            if(e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+     
+    </script>
+</body>
+
+</html>
+
+<iframe src="https://itch.io/embed-upload/8260650?color=161021" allowfullscreen="" width="720" height="740" frameborder="0"><a href="https://sofydev.itch.io/catwithabat">Play Cat With A Bat  (goes wack) on itch.io</a></iframe>
 <iframe src="https://itch.io/embed/2154956" width="552" height="167" frameborder="0"><a href="https://sofydev.itch.io/catwithabat">Cat With A Bat  (goes wack) by SofyDev</a></iframe>
